@@ -39,6 +39,9 @@ This project provides an end-to-end analytics solution by:
   8.  Amazon CloudWatch (monitoring)
   9.  AWS IAM (role-based access)
 
+# Architecture Diagram
+
+
 # Steps : 
 
 ## 🔍 Data Generation & Insights & Relationships :
