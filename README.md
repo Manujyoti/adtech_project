@@ -41,6 +41,8 @@ This project provides an end-to-end analytics solution by:
 
 # Architecture Diagram
 
+![Architechture_diagram](https://github.com/zayconik/adtech_project/blob/main/Architechture.png)
+
 
 # Steps : 
 
@@ -268,6 +270,16 @@ After the data is cleaned and transformed using AWS Glue, it is stored as partit
 
 # Live DashBoard :
 
+## 1. Campaign summary dashboard :
+   ![Campaign summary_diagram](https://github.com/zayconik/adtech_project/blob/main/Campaign_summary.png)
+
+
+## 2. Creative performance dashboard :
+   ![Creative performance_diagram](https://github.com/zayconik/adtech_project/blob/main/Creative_performance.png)
+
+   
+## 3. Daily Campaign Performance :
+   ![Creative performance_diagram](https://github.com/zayconik/adtech_project/blob/main/Daily_campaign_performance.png)
 
 
 
