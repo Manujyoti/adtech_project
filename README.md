@@ -41,7 +41,9 @@ This project provides an end-to-end analytics solution by:
 
 # Architecture Diagram
 
+
 ![Architechture_diagram](https://github.com/zayconik/adtech_project/blob/main/Architechture.png)
+
 
 
 # Steps : 
