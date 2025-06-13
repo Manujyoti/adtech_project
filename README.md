@@ -40,7 +40,7 @@ This project provides an end-to-end analytics solution by:
   9.  AWS IAM (role-based access)
 
 # Architecture Diagram
-
+![Architecture Diagram](https://github.com/zayconik/adtech_project/raw/main/Architechture.png)
 
 # Steps : 
 
