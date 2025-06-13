@@ -176,23 +176,23 @@ After the data is cleaned and transformed using AWS Glue, it is stored as partit
 
      1. campaign_summary
 
-       1. Gives aggregated insights per campaign_id
-       2. Sums overall spends for particular ad_id
+        1. Gives aggregated insights per campaign_id
+        2. Sums overall spends for particular ad_id
           
-              CREATE OR REPLACE VIEW "campaign_summary" AS 
-              SELECT
-              campaign_id
-              , SUM(impressions) total_impressions
-              , SUM(clicks) total_clicks
-              , SUM(spend) total_spend
-              , SUM(conversions) total_conversions
-              , (CASE WHEN (SUM(impressions) > 0) THEN ((SUM(clicks) * 1E0) / SUM(impressions)) ELSE 0 END) ctr
-              , (CASE WHEN (SUM(clicks) > 0) THEN ((SUM(spend) * 1E0) / SUM(clicks)) ELSE 0 END) cpc
-              , (CASE WHEN (SUM(impressions) > 0) THEN (((SUM(spend) * 1E0) / SUM(impressions)) * 1000) ELSE 0 END) cpm
-              , (CASE WHEN (SUM(clicks) > 0) THEN ((SUM(conversions) * 1E0) / SUM(clicks)) ELSE 0 END) conversion_rate
-              FRO
-              processed_campaign_data
-              GROUP BY campaign_id
+                CREATE OR REPLACE VIEW "campaign_summary" AS 
+                SELECT
+                campaign_id
+                , SUM(impressions) total_impressions
+                , SUM(clicks) total_clicks
+                , SUM(spend) total_spend
+                , SUM(conversions) total_conversions
+                , (CASE WHEN (SUM(impressions) > 0) THEN ((SUM(clicks) * 1E0) / SUM(impressions)) ELSE 0 END) ctr
+                , (CASE WHEN (SUM(clicks) > 0) THEN ((SUM(spend) * 1E0) / SUM(clicks)) ELSE 0 END) cpc
+                , (CASE WHEN (SUM(impressions) > 0) THEN (((SUM(spend) * 1E0) / SUM(impressions)) * 1000) ELSE 0 END) cpm
+                , (CASE WHEN (SUM(clicks) > 0) THEN ((SUM(conversions) * 1E0) / SUM(clicks)) ELSE 0 END) conversion_rate
+                FRO
+                processed_campaign_data
+                GROUP BY campaign_id
 
      2. campaign_performance
     
@@ -263,7 +263,7 @@ After the data is cleaned and transformed using AWS Glue, it is stored as partit
                 Streamlit  Dashboards
 
 
-# Live DashBorad :
+# Live DashBoard :
 
 
 
